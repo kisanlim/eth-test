@@ -13,9 +13,9 @@ import java.math.BigInteger;
 @Service
 public class EthereumWalletService {
     private static final String RPC_URL = "https://mainnet.infura.io/v3/2c25d68e560b4b04a0d5a6b117243122";
+//    private static final String RPC_URL = "http://127.0.0.1:8545";
     private static final String PASSWORD = "Coinbit12!@";
     private static final String WALLET_FILE = ""; // 지갑 주소를 저장 할 경로
-
     private Web3j web3j;
 
     public EthereumWalletService() {
@@ -26,9 +26,9 @@ public class EthereumWalletService {
     public String createWallet() {
         try {
             // 새로운 지갑 파일 생성
-            String walletFileName = WalletUtils.generateLightNewWalletFile(PASSWORD, null);
-            System.out.println("sdaf");
+//            String walletFileName = WalletUtils.generateLightNewWalletFile(PASSWORD, null);
             // 생성된 지갑 파일 이름 반환
+
             return walletFileName;
         } catch (Exception e) {
             e.printStackTrace();

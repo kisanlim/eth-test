@@ -13,7 +13,7 @@ import org.web3j.protocol.http.HttpService;
 import java.math.BigDecimal;
 
 @RestController
-@RequestMapping("/api/v1/eth")
+@RequestMapping("/api/v1/Ethereum")
 public class EthereumWalletController {
 
     private final EthereumWalletService walletService;
